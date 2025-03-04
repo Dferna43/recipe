@@ -1,0 +1,141 @@
+/* Color palette
+#0D0D0D
+#F2F2F2
+#7ABFBF
+rgba(122, 191, 191, .5)
+#EB5428 */
+
+
+
+/* <--------------- Global Styles --------------------> */
+
+html {
+    background-color: rgba(122, 191, 191, .5);
+    padding: 20%;
+}
+
+main {
+    background-color: #F2F2F2;
+}
+
+/* <--------------- MOBILE (414px)--------------------> */
+@media screen and (min-width: 414px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 414px;
+        background-color: #EB5428;
+        box-shadow: 0px 3px 3px #bbb;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 4;
+        padding: 10px 20px;
+        /* grid-area: nav;
+        min-width: 414px;
+        background-color: #ffffff;
+        box-shadow: 0px 3px 3px #bbb;
+        position: fixed;
+        top: 0;
+        z-index:5; */
+    }
+    nav ul {
+        display: none;
+        list-style: none;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #EB5428;
+        box-shadow: 0px 3px 3px #bbb;
+        /* grid-area: hamberger;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        overflow: hidden;
+        max-height: 0; */
+    }
+
+    nav input:checked ~ ul {
+        display: block;
+    }
+
+    nav li img {
+        display: none;
+    }
+
+    nav li a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+    }
+
+    nav label {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        /* cursor: pointer;
+        display: inline-block;
+        user-select: none;
+        position: relative;
+        bottom: 5px;
+        left: 30px; */
+    }
+
+    /* nav span {
+        display: block;
+        position: relative;
+     }
+      */
+
+    nav label svg {
+        width: 40px;
+        height: 40px;
+        /* display: block; */
+    }
+
+    nav #logo {
+        margin: 0 auto;
+    }
+
+    nav #sign-in {
+        display: flex;
+        align-items: center;
+    }
+
+    nav #sign-in svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* label span:before, label span:after {
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    } */
+    /* nav input {
+        display: none;
+    }
+    nav input:checked ~ ul {
+        max-height: 550px;
+    } */
+
+    nav h2 {
+        display: none;
+    }
+
+    /* nav h2 {
+        visibility: hidden;
+        height: 1px;
+        width: 1px;
+    } */
+}
+
+/* <--------------- large (768px)--------------------> */
+
+/* <--------------- Xlarge (1280px)--------------------> */
