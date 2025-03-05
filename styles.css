@@ -680,7 +680,64 @@ main section p {
 /* <--------------- large (1280px)--------------------> */
 
 @media screen and (min-width: 1280px) {
+    .street-tacos-section {
+        display: flex;
+        flex-direction: row; 
+        align-items: flex-start; 
+        gap: 20px; 
+        padding: 20px;
+        position: relative; 
+    }
     
+    .action-menu-section {
+        position: absolute; 
+        left: 0; 
+        top: 50px; 
+        width: 200px; 
+    }
+    
+    .action-menu-section ul {
+        display: flex;
+        flex-direction: column; 
+        gap: 10px; 
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+   
+    .action-menu-section li {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Space between icon and text */
+    }
+    
+    
+    .action-menu-section button, .action-menu-section a {
+        background: none;
+        border: none;
+        color: #EB5428;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    
+    
+    .street-tacos-section section img {
+        /* flex: 1;  */
+        max-width: 30px; 
+        height: auto;
+        align-self: center; 
+        margin-left: 220px; 
+    }
+    
+    .street-tacos-section p {
+        flex: 1; 
+        max-width: 30%; 
+        padding: 0 20px; 
+        margin-left: auto; 
+    }
+
     h1 {
         text-align: center;
     }
